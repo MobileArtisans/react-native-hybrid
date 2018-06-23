@@ -5,6 +5,8 @@
   "scripts": {
     "android": "cd android && ./gradlew installDebug",
     "postandroid": "yarn start",
+    "bundle:android": "haul bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.js",
+    "postbundle:android": "rm -f android/app/src/main/assets/index.android.js.map",
     "format": "prettier --write '**/*.*'",
     "lint:prettier": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn lint:prettier",

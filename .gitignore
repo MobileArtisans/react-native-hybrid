@@ -24,3 +24,4 @@ haul-debug.log
 /android/build
 /android/.gradle
 /android/app/build
+/android/app/src/main/assets/index.android.js
