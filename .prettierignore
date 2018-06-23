@@ -1,0 +1,12 @@
+/android
+/ios
+/node_modules
+.git
+yarn.lock
+.DS_Store
+.eslintignore
+.prettierignore
+.gitignore
+.babelrc
+webpack.haul.js
+README.md
