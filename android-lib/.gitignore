@@ -1,0 +1,6 @@
+# Android
+build/
+.gradle
+lib/build
+lib/src/main/assets/index.android.js
+maven-repos/

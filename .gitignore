@@ -19,9 +19,3 @@ yarn-error.log*
 # Haul
 #
 haul-debug.log
-
-# Android
-/android/build
-/android/.gradle
-/android/app/build
-/android/app/src/main/assets/index.android.js

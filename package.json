@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "android": "cd android && ./gradlew installDebug",
+    "android:lib": "cd android-lib && ./gradlew assemble && ./gradlew publish",
     "postandroid": "yarn start",
-    "bundle:android": "haul bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.js",
-    "postbundle:android": "rm -f android/app/src/main/assets/index.android.js.map",
+    "bundle:android": "haul bundle --platform android --dev false --entry-file index.js --bundle-output android-lib/lib/src/main/assets/index.android.js --assets-dest android-lib/lib/src/main/res/",
+    "postbundle:android": "rm -f android-lib/lib/src/main/assets/index.android.js.map",
     "format": "prettier --write '**/*.*'",
     "lint:prettier": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn lint:prettier",
