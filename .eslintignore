@@ -1,1 +1,4 @@
 webpack.haul.js
+node_modules
+android/
+android-lib/
